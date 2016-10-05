@@ -25,11 +25,16 @@
     width: 33%;
     img {
       float: left;
-
+      width: 100%;
     }
   }
 
   .services {
-    display: inline;
+    display: inline-block;
+    margin-top: 2rem;
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
