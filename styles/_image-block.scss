@@ -7,6 +7,7 @@
   .slide {
     float: left;
     display: inline-block;
+    padding-top: .5rem;
     img {
       float: left;
       width: 100%;
@@ -31,7 +32,7 @@
 
   .services {
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     p {
       font-size: 1rem;
