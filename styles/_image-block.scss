@@ -1,5 +1,6 @@
 .image-block {
   @include clearfix;
+  text-align: center;
   ul {
     @include ul-adjust;
   }
@@ -10,5 +11,25 @@
       float: left;
       width: 100%;
     }
+  }
+}
+
+.services {
+  display: none;
+}
+
+@media (min-width: 965px) {
+  .slide {
+    float: left;
+    display: inline-block;
+    width: 33%;
+    img {
+      float: left;
+      clear: right;
+    }
+  }
+
+  .services {
+    display: inline;
   }
 }
