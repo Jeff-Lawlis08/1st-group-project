@@ -1,0 +1,14 @@
+.image-block {
+  @include clearfix;
+  ul {
+    @include ul-adjust;
+  }
+  .slide {
+    float: left;
+    display: inline-block;
+    img {
+      float: left;
+      width: 100%;
+    }
+  }
+}
