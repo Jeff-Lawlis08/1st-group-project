@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +7,60 @@
     <link rel="stylesheet" href="main.css">
     <title>Barton Creek Cycling</title>
 </head>
-
 <body>
-    <header>
-        <div class="banner">
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/tiy-greenville-frontend-2016-feb/assets/master/assignments/2.4-swamp-rabbit-cycling/bike.png" />
+  <header>
+      <div class="banner">
+          <div class="logo">
+              <img src="https://raw.githubusercontent.com/tiy-greenville-frontend-2016-feb/assets/master/assignments/2.4-swamp-rabbit-cycling/bike.png" />
+          </div>
+          <h1>Barton Creek Cycling</h1>
+      </div>
+    <h3>Bringing you the best in bicycle gear, equipment and community since 1999</h3>
+  </header>
+    <footer>
+        <div class="contact-info">
+            <h4>Visit, call or email us today and get the most out of your bike riding experience!</h4>
+            <h5>(512) 555-0217</h5>
+            <div class="Google-Map">
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+                <div style="overflow:hidden;height:400px;width:400px;">
+                    <div id="gmap_canvas" style="height:400px;width:400px;"></div>
+                    <div><small><a href="http://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div>
+                    <div><small><a href="https://top10geeks.com/top-10-best-anti-aging-products-2016/">Top 10 anti-aging products of 2016</a></small></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+                    </style>
+                </div>
+                <script type="text/javascript">
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 10,
+                            center: new google.maps.LatLng(30.274076523766123, -97.85797815390629),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(30.274076523766123, -97.85797815390629)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: "<strong>Barton Creek Cycling</strong><br>Barton Creek, Austin, Texas<br>"
+                        });
+                        google.maps.event.addListener(marker, "click", function() {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, "load", init_map);
+                </script>
+
             </div>
-            <h1>Barton Creek Cycling</h1>
+            <h5>bartoncreekcycling@example.com</h5>
+            <h6 class="footer-company-name">2016 Barton Creek Cycling, LLC</h6>
         </div>
-      <h3>Bringing you the best in bicycle gear, equipment and community since 1999</h3>
-
-    </header>
+    </footer>
 </body>
-
 </html>
