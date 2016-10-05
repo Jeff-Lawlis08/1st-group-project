@@ -23,10 +23,34 @@ img {
 
 }
 }
+  // .socMedia {
+  //   position: absolute;
+  //   right: 5%;
+  //   top: 3rem;
+
+  // }
   .socMedia {
-    position: absolute;
-    right: 5%;
-    bottom: 3rem;
+    position: relative;
+    float: right;
+    span {
+      display: none;
+      padding-bottom: 1rem;
+    }
+    i {
+      display: block;
+      width: 10%;
+      margin: 0 auto;
+      font-size: 20px;
+    }
+
+    .fa-twitter-square {
+      color: #55ACEE;
+    }
+
+    .fa-facebook-square {
+      color: #4862A3;
+    }
+
   }
 }
   header::after {
@@ -37,7 +61,28 @@ img {
 
 }
 h3 {
-  width: 30%;
+  width: 50%;
   margin: 0 auto;
 
+}
+
+
+
+@media (min-width: 481px) {
+  header {
+    .socMedia {
+      position: absolute;
+      right: 1%;
+      top: 3rem;
+
+      span {
+        display: block;
+      }
+
+      i {
+        display: inline;
+      }
+
+    }
+  }
 }
