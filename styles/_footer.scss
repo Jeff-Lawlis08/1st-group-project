@@ -1,19 +1,51 @@
 footer {
   text-align: center;
-
-  .contact-info {
-    border-top: 2px solid black;
-    padding-top: 10px;
-  }
+  font-size: 1rem;
+  font-weight: 200;
 
   .Google-Map {
     margin: 0 auto;
     width: 400px;
   }
 
-  .footer-company-name {
-    border-top: 2px solid black;
-    padding-top: 10px;
+  .fa-bicycle {
+    display: none;
+  }
 
+  .footer-company-name {
+    width: 10em;
+    border-top: 2px solid black;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 480px) {
+
+  footer {
+
+    .contact-info {
+      width: calc(100% - 400px);
+      padding-top: 20%;
+      float: right;
+    }
+
+    .fa-bicycle {
+      display: block;
+      padding-top: 5%;
+      font-size: 2em;
+    }
+
+    .Google-Map {
+      float: left;
+      padding-top: 10%;
+      position: relative;
+    }
+
+    .footer-company-name {
+      margin-top: 1rem;
+      display: inline-block;
+      position: relative;
+    }
   }
 }
