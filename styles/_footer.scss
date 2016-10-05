@@ -8,6 +8,10 @@ footer {
     width: 400px;
   }
 
+  .fa-bicycle {
+    display: none;
+  }
+
   .footer-company-name {
     width: 10em;
     border-top: 2px solid black;
@@ -17,7 +21,31 @@ footer {
 }
 
 @media (min-width: 480px) {
-    .Google-Map {
-      text-align: left;
+
+  footer {
+
+    .contact-info {
+      width: calc(100% - 400px);
+      padding-top: 20%;
+      float: right;
     }
+
+    .fa-bicycle {
+      display: block;
+      padding-top: 5%;
+      font-size: 2em;
+    }
+
+    .Google-Map {
+      float: left;
+      padding-top: 10%;
+      position: relative;
+    }
+
+    .footer-company-name {
+      margin-top: 1rem;
+      display: inline-block;
+      position: relative;
+    }
+  }
 }
