@@ -2,6 +2,7 @@ footer {
   text-align: center;
   font-size: 1rem;
   font-weight: 200;
+  @include clearfix;
 
   .Google-Map {
     margin: 0 auto;
@@ -22,11 +23,14 @@ footer {
 
 @media (min-width: 480px) {
 
+  h6 {
+  }
+
   footer {
 
     .contact-info {
       width: calc(100% - 400px);
-      padding-top: 20%;
+      padding-top: 10%;
       float: right;
     }
 
@@ -38,12 +42,13 @@ footer {
 
     .Google-Map {
       float: left;
-      padding-top: 10%;
+      padding-top: 5%;
       position: relative;
     }
 
     .footer-company-name {
       margin-top: 1rem;
+      margin-left: 1rem;
       display: inline-block;
       position: relative;
     }

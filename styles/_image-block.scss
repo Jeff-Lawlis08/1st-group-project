@@ -3,15 +3,28 @@
   text-align: center;
   ul {
     @include ul-adjust;
+    @include clearfix;
   }
   .slide {
     float: left;
     display: inline-block;
     padding-top: .5rem;
+    position: relative;
+    ;
     img {
       float: left;
       width: 100%;
     }
+
+  .slide-title {
+    position: absolute;
+    right: 1rem;
+    bottom: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 0;
+    font-weight: 600;
+  }
   }
 }
 
@@ -24,6 +37,7 @@
     float: left;
     display: inline-block;
     width: 33%;
+    transition: width 2s;
     img {
       float: left;
       width: 100%;
@@ -32,7 +46,7 @@
 
   .services {
     display: inline-block;
-    margin-top: 1rem;
+    margin: 1rem 4rem 0 4rem;
 
     p {
       font-size: 1rem;

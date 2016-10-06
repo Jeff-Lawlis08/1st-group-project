@@ -12,7 +12,8 @@
   <header>
       <div class="banner">
           <div class="logo">
-              <img src="https://raw.githubusercontent.com/tiy-greenville-frontend-2016-feb/assets/master/assignments/2.4-swamp-rabbit-cycling/bike.png" />
+              <!-- <img src="https://raw.githubusercontent.com/tiy-greenville-frontend-2016-feb/assets/master/assignments/2.4-swamp-rabbit-cycling/bike.png" /> -->
+              <img src="images/newlogo.png">
           </div>
     <h1>Barton Creek Cycling</h1>
   </div>
@@ -27,9 +28,18 @@
 </header>
   <main class="image-block">
     <ul class="slideshow">
-      <li class="slide"><img src="images/boardwalk1.jpg" alt="bike1" /></li>
-      <li class="slide"><img src="images/bike-park.jpg" alt="bike2" /></li>
-      <li class="slide"><img src="images/rockfall.jpg" alt="bike3" /></li>
+      <li class="slide">
+        <img src="images/boardwalk1.jpg" alt="bike1" />
+        <h7 class="slide-title">ROAD</h7>
+      </li>
+      <li class="slide">
+        <img src="images/bike-park.jpg" alt="bike2" />
+        <h7 class="slide-title">TRAIL</h7>
+      </li>
+      <li class="slide">
+        <img src="images/rockfall.jpg" alt="bike3" />
+        <h7 class="slide-title">MOUNTAIN</h7>
+      </li>
     </ul>
     <aside class="services">
       <p>
@@ -42,6 +52,7 @@
             <h4>Visit, call or email us today and get the most out of your bike riding experience!</h4>
             <h5>(512) 555-0217</h5>
             <h5>bartoncreekcycling@example.com</h5>
+            <button type="button" name="button" class="subscribe">Join our email list!</button>
           </div>
             <div class="Google-Map">
                 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
@@ -78,9 +89,8 @@
                     }
                     google.maps.event.addDomListener(window, "load", init_map);
                 </script>
-
             </div>
-            <div>
+          <div>
               <h6 class="footer-company-name">2016 Barton Creek Cycling, LLC</h6>
             <i class="fa fa-bicycle" aria-hidden="true"></i>
           </div>
