@@ -8,16 +8,17 @@ header {
     margin: 0 auto;
     display: inline-block;
 
-.logo {
-  padding: 0;
-  width: 70%;
-  margin: 0 auto;
-  box-sizing: border-box;
+  .logo {
+    padding: 0;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
 
-img {
-  width: 30%;
-}
-}
+    img {
+      width: 60%;
+    }
+  }
+
   h1 {
     font-size: 40px;
     color: #329fc6;
@@ -32,6 +33,7 @@ img {
   .socMedia {
     position: relative;
     float: right;
+
     span {
       display: none;
       padding-bottom: 1rem;
@@ -66,10 +68,15 @@ h3 {
 
 }
 
-
-
 @media (min-width: 481px) {
   header {
+
+    .banner .logo {
+      width: 50%;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
     .socMedia {
       position: absolute;
       right: 1%;
