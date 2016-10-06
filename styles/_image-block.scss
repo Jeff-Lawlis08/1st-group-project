@@ -5,26 +5,73 @@
     @include ul-adjust;
     @include clearfix;
   }
-  .slide {
-    float: left;
-    display: inline-block;
-    padding-top: .5rem;
+  .slideshow {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
     position: relative;
-    ;
+    display: block;
+    height: 250px;
+  }
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+    display: block;
+    width: 100%;
+
     img {
-      float: left;
       width: 100%;
     }
 
-  .slide-title {
-    position: absolute;
-    right: 1rem;
-    bottom: 1.5rem;
-    color: white;
-    font-size: 1.5rem;
-    line-height: 0;
-    font-weight: 600;
+    // float: left;
+    // display: inline-block;
+    // padding-top: .5rem;
+    // position: relative;
+    // img {
+    //   float: left;
+    //   width: 100%;
+    // }
+
+  // .slide-title {
+  //   position: absolute;
+  //   right: 1rem;
+  //   bottom: 1.5rem;
+  //   color: white;
+  //   font-size: 1.5rem;
+  //   line-height: 0;
+  //   font-weight: 600;
+  // }
   }
+  .inav {
+  display: none;
+  }
+
+  .one:checked ~ .slideshow > .one,
+  .two:checked ~ .slideshow > .two,
+  .three:checked ~ .slideshow > .three {
+    opacity: 1;
+  }
+
+  .one:checked ~ .labels > .one-label,
+  .one:checked ~ .labels > .two-label,
+  .one:checked ~ .labels > .three-label {
+  opacity: 1;
+  }
+
+  .labels {
+    display: inline-block;
+  }
+
+  .indexer {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #b3b6c6;
+    // border: 1px solid $color_default;
   }
 }
 
